@@ -24,7 +24,7 @@ jobs:
       run: msbuild SimpleFrameworkApp.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
  
     - name: Upload Artifact
-      uses: actions/upload-artifact@v1.0.0
+      uses: actions/upload-artifact@v4.3.3
       with:
         name: published_webapp
         path: bin\Release\Publish
